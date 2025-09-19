@@ -1,29 +1,26 @@
-/* Seleciona os 3 itens da lista */
-const primeira = document.querySelector(".primeira__opcao");
-const segunda = document.querySelector(".segunda__opcao");
-const terceira = document.querySelector(".terceira__opcao");
+const body = document.querySelector('body');
+const bt1 = document.querySelector('.primeira__opcao');
+const bt2 = document.querySelector('.segunda__opcao');
+const bt3 = document.querySelector('.terceira__opcao');
 
-/* Função para mudar posição aleatória do blob */
-function mudarBlobPosicao() {
-    const x = Math.floor(Math.random() * 101); // entre 0 e 100%
-    const y = Math.floor(Math.random() * 101);
-    document.body.style.backgroundPosition = `${x}% ${y}%`;
-}
+const texto = document.querySelector("#texto");
+const subtitulo = document.querySelector("#subtitulo");
+const imagem = document.querySelector('figure img');
 
-/* Executa quando a página carrega */
-window.addEventListener("DOMContentLoaded", () => {
-    mudarBlobPosicao();
+bt1.addEventListener('click', () => {
+    window.location.href = 'index.html';
 });
 
-/* Adiciona eventos de clique para cada um */
-primeira.addEventListener("click", () => {
-    window.location.href = "paginaDois.html"; 
+bt2.addEventListener('click', () => {
+    body.style.backgroundImage = 'url(/img/modelo4.svg)';
+    imagem.setAttribute('src', './img/illustration.png');
+    subtitulo.textContent = "Vantagens do MongoDB";
+    texto.textContent = "O MongoDB oferece flexibilidade, escalabilidade e desempenho para aplicações modernas com grandes volumes de dados.";
 });
 
-segunda.addEventListener("click", () => {
-    window.location.href = "paginaTres.html";
-});
-
-terceira.addEventListener("click", () => {
-    window.location.href = "paginaQuatro.html";
+bt3.addEventListener('click', () => {
+    body.style.backgroundImage = 'url(/img/modelo5.svg)';
+    imagem.setAttribute('src', './gifs/bedroom-at-night.gif');
+    subtitulo.textContent = "Casos de Uso";
+    texto.textContent = "É ideal para aplicações em tempo real, como catálogos de produtos, redes sociais e sistemas de gerenciamento de conteúdo.";
 });
