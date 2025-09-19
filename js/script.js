@@ -13,7 +13,7 @@ bt1.addEventListener('click', () => {
 
 bt2.addEventListener('click', () => {
     body.style.backgroundImage = 'url(/img/modelo4.svg)';
-    imagem.setAttribute('src', './img/illustration.png');
+    imagem.setAttribute('src', './gifs/gifMongo2.gif');
     subtitulo.textContent = "Vantagens do MongoDB";
     texto.textContent = "O MongoDB oferece flexibilidade, escalabilidade e desempenho para aplicações modernas com grandes volumes de dados.";
 });
