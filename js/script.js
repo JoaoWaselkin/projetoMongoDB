@@ -15,12 +15,13 @@ bt2.addEventListener('click', () => {
     body.style.backgroundImage = 'url(/img/modelo4.svg)';
     imagem.setAttribute('src', './gifs/gifMongo2.gif');
     subtitulo.textContent = "Vantagens do MongoDB";
-    texto.textContent = "O MongoDB oferece flexibilidade, escalabilidade e desempenho para aplicações modernas com grandes volumes de dados.";
+    texto.textContent = "O MongoDB é o banco de dados que te dá flexibilidade, escalabilidade e performance para criar aplicações modernas sem dor de cabeça. Se você trabalha com grandes volumes de dados, ele é o seu melhor amigo.";
 });
 
 bt3.addEventListener('click', () => {
-    body.style.backgroundImage = 'url(/img/modelo5.svg)';
+    body.style.backgroundImage = 'url(/img/modelo3.svg)';
     imagem.setAttribute('src', './gifs/bedroom-at-night.gif');
     subtitulo.textContent = "Casos de Uso";
-    texto.textContent = "É ideal para aplicações em tempo real, como catálogos de produtos, redes sociais e sistemas de gerenciamento de conteúdo.";
+
+    texto.innerHTML = "O MongoDB é ideal para aplicações em tempo real, como catálogos de produtos, redes sociais e sistemas de gerenciamento de conteúdo. Basicamente, ele é o banco de dados que faz com que os desenvolvedores tenham uma boa noite de sono, sabendo que tudo está funcionando perfeitamente. Quer saber mais e ter uma boa noite de sono? Clique aqui e conheça o mundo do MongoDB: <a href='https://www.canva.com/design/DAGzDrHrwk0/IRWB8oXxjjcuh7S2CaU_YA/edit'>clique aqui</a>";
 });

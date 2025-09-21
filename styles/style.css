@@ -8,14 +8,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-    /* Alteração para o layout do rodapé */
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Garante que a página tenha no mínimo a altura da tela */
 }
 
-/* O contêiner principal agora é a "mola" que empurra o rodapé para baixo */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -24,7 +22,6 @@ body {
     flex-grow: 1; 
 }
 
-/* Alteração: Corrigido o `font-display` para `display` */
 .conteudo__container{
     display: flex;
     flex-direction: column;
@@ -34,13 +31,12 @@ body {
     margin-top: 40px
 }
 
-/* Alteração: Margem do título para ser mais flexível */
+
 .titulo__container {
     margin-right: 900px;
     margin-top: 20px;
 }
 
-/* Alteração: Removida a margem fixa para evitar o espaçamento extra */
 .alinhamento {
     display: flex;
     justify-content: center;
@@ -49,10 +45,10 @@ body {
     align-items: flex-start;
 }
 
-/* Alteração: Tamanho do contêiner da imagem e centralização */
+
 figure {
-    min-height: 350px;
-    max-width: 350px;
+    min-height: 450px;
+    max-width: 450px;
     margin-left: 100px;
     margin-top: 100px;
 }
@@ -67,6 +63,7 @@ figure img {
 .titulo {
     font-size: 70px;
     font-family: var(--fonte-titulo);
+    color: green
 }
 
 .subtitulo {
@@ -87,6 +84,11 @@ figure img {
     height: 50px;
     padding: 20px;
     margin-bottom: 50px;
+}
+
+.titulo__container img {
+    min-height: 80px;
+    max-width: 80px;
 }
 
 /*Elementos da Lista*/
@@ -125,7 +127,6 @@ figure img {
     background-color: #37353E;
     height: 100px;
     width: 100%; 
-    
     margin-top: 0;
 }
 
